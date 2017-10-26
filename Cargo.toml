@@ -1,0 +1,23 @@
+[package]
+name = "hello-rocket"
+version = "0.1.0"
+authors = ["Joni Mäkelä <joni.makela@gmail.com>"]
+
+[dependencies]
+rocket = "*"
+rocket_codegen = "*"
+r2d2-diesel = "*"
+r2d2 = "*"
+
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+
+diesel = { version = "0.16.0", features = ["sqlite"]}
+diesel_codegen = { version = "0.16.0", features = ["sqlite"] }
+dotenv = "0.9.0"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json","handlebars_templates"]

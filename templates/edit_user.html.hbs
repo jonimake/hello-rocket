@@ -1,0 +1,14 @@
+<div>
+Id: {{this.id}}
+</div>
+<form method="post" action="/users/{{this.id}}/edit">
+    <label>Username:
+        <input name="username" type="text"/>
+    </label>
+    <br>
+    <label>Password:
+        <input name="password" type="password"/>
+    </label>
+    <br>
+    <input type="submit"/>
+</form>
