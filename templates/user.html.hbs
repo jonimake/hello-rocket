@@ -1,12 +1,23 @@
+<!DOCTYPE html>
+<html>
+{{>partials/head}}
+<body>
+{{>partials/navbar}}
+
+
 <div>
 Id: {{this.id}}
 <br>
 Username: {{this.username}}
 <br>
+Roles: {{this.roles}}
+<br>
 Password: {{this.password}}
 </div>
 <div>
-    <form action="/users/{{this.id}}/edit">
-        <input type="submit" value="Muokkaa"/>
-    </form>
+    <a href="/users/{{this.id}}/edit">
+        <button>Muokkaa</button>
+    </a>
 </div>
+</body>
+</html>

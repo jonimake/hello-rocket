@@ -1,0 +1,12 @@
+Cargo.lock
+Cargo.toml
+cargowatch.sh
+database.db
+install-txt
+migrations
+out.txt
+Rocket.toml
+src
+static
+target
+templates

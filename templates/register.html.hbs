@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+{{>partials/head}}
+<body>
+{{>partials/navbar}}
+
+<form action="/users" method="post">
+    <label for="newUserName">Username</label>
+    <input type="text" name="username" id="newUserName">
+
+    <label for="newUserPassword">Password</label>
+    <input type="password" name="password" id="newUserPassword">
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

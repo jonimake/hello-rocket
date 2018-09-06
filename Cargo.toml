@@ -3,19 +3,32 @@ name = "hello-rocket"
 version = "0.1.0"
 authors = ["Joni Mäkelä <joni.makela@gmail.com>"]
 
+[lib]
+name = "hello_rocket_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hello_rocket"
+path = "src/main.rs"
+
 [dependencies]
-rocket = "*"
-rocket_codegen = "*"
+diesel = { version = "1.3.2", features = ["sqlite"]}
+diesel_migrations = "1.3.0"
+
+dotenv = "0.13.0"
+
 r2d2-diesel = "*"
 r2d2 = "*"
 
-serde = "1.0"
-serde_json = "1.0"
-serde_derive = "1.0"
+rocket = "*"
+rocket_codegen = "*"
 
-diesel = { version = "0.16.0", features = ["sqlite"]}
-diesel_codegen = { version = "0.16.0", features = ["sqlite"] }
-dotenv = "0.9.0"
+serde = "1.0.*"
+serde_json = "1.0.*"
+serde_derive = "1.0.*"
+
+lazy_static = "1.1.0"
+parking_lot = { version = "0.6.3", features= ["nightly"]}
 
 [dependencies.rocket_contrib]
 version = "*"

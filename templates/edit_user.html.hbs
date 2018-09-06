@@ -1,7 +1,16 @@
+<!DOCTYPE html>
+<html>
+{{>partials/head}}
+
+<body>
+
+{{>partials/navbar}}
+
 <div>
 Id: {{this.id}}
 </div>
 <form method="post" action="/users/{{this.id}}/edit">
+    <input name="id" type="hidden" value="{{this.id}}"/>
     <label>Username:
         <input name="username" type="text"/>
     </label>
@@ -12,3 +21,6 @@ Id: {{this.id}}
     <br>
     <input type="submit"/>
 </form>
+
+</body>
+</html>

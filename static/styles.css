@@ -1,0 +1,34 @@
+#navbar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    background: grey;
+    list-style: none;
+}
+
+.nav-item {
+    /*display: block;*/
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: antiquewhite;
+}
+
+#userlogin {
+    background: gray;
+    align-self: flex-end;
+}
+
+/* Change the link color to #111 (black) on hover */
+#navbar > .row-item:hover {
+
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-item {
+    flex: 1 0 auto;
+}
